@@ -4,8 +4,6 @@ const port = process.env.PORT || 5000;
 const path = require('path');
 const fs = require('fs')
 
-app.use(express.static(path.join(__dirname, 'public')));
-
 app.get('/', function(request, response) {
   console.log('Home page visited!');
     const data = '<!DOCTYPE html><html lang="en"><head>'
